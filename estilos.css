@@ -50,13 +50,31 @@ body {
     display: none;
 }
 .contenedor .contenido {
-    background: #aaaa;
+    /* background: #aaaa; */
     grid-column: span 2;
+}
+.contenido .peliculas img {
+    height: 250px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 0px #ccc;
+    padding: 5px;
+    object-fit: cover;
 }
 .contenedor .sidebar {
     grid-column: 3 / 4;
-    background: #faaa;
+    /* background: #faaa; */
     grid-row: 2 / 4;
+}
+.contenedor .sidebar{
+    display: grid; 
+    
+}
+.contenedor .sidebar img {
+    height: 150px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 0px #ccc;
+    object-fit: cover;
+    
 }
 .contenedor .widget-1,
 .contenedor .widget-2 {
