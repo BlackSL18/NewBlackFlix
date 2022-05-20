@@ -61,7 +61,7 @@ body {
     padding: 5px;
     
 }
-.contenido .imagenpeliculas {
+.contenido .peliculas imagenpeliculas {
     display: flex;
 }
 .contenedor .sidebar {
@@ -80,9 +80,53 @@ body {
     object-fit: cover;
     
 }
-.contenedor .widget-1,
-.contenedor .widget-2 {
+.contenedor .widget-1 {
 background: cornflowerblue;
+}
+.contenedor .formulario {
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: "Calibri";
+    color: #ffff;
+}
+.contenedor .formulario h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.contenedor .controles {
+    width: 100%;
+    background: #24303c;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 3px solid #333436;
+    font-family: "calibri";
+    font-size: 18px;
+    padding: auto;
+    color: #ffff;
+}
+.contenedor .formulario p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+.formulario a {
+    color: #ffff;
+    text-decoration: underline;
+}
+.formulario .boton {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: #ffff;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
 }
 .contenedor .footer {
     background: grey;
