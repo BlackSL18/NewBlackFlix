@@ -49,6 +49,7 @@ body {
 .contenedor .menubar {
     display: none;
 }
+
 .contenedor .contenido {
     /* background: #aaaa; */
     grid-column: span 2;
@@ -58,7 +59,10 @@ body {
     border-radius: 5%;
     box-shadow: 5px 5px 0px #ccc;
     padding: 5px;
-    object-fit: cover;
+    
+}
+.contenido .imagenpeliculas {
+    display: flex;
 }
 .contenedor .sidebar {
     grid-column: 3 / 4;
