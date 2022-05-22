@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    background: #1f5274;
 }
 
 body {
@@ -11,12 +12,11 @@ body {
 
 .contenedor {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1250px;
     margin: 10px auto;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(3 , 1fr);
-    grid-template-rows: repeat(4, auto);
+   
 }
 /* .contenedor div {
     background: #ffff;
@@ -27,8 +27,8 @@ body {
     background-color: cornflowerblue;
     color: azure;
     grid-column-start: 1;
-    grid-column-end: 4;
-    display: table;
+    grid-column-end: 6;
+    display: grid;
 }
 .contenedor .header .logo {
     width: 130px;
@@ -51,37 +51,79 @@ body {
 }
 
 .contenedor .contenido {
-    /* background: #aaaa; */
-    grid-column: span 2;
+    grid-column: 1/4;
+    grid-row: 2/4;
 }
 .contenido .peliculas img {
-    height: 250px;
+    height: 290px;
     border-radius: 5%;
-    box-shadow: 5px 5px 0px #ccc;
     padding: 5px;
     
 }
-.contenido .peliculas imagenpeliculas {
-    display: flex;
+.imagenpeliculas {
+    display: inline-block;
 }
-.contenedor .sidebar {
-    grid-column: 3 / 4;
-    /* background: #faaa; */
-    grid-row: 2 / 4;
+.contenido .series img {
+    height: 290px;
+    border-radius: 5%;
+    padding: 5px;
+    display: inline-block;
+   
 }
-.contenedor .sidebar{
+.imagenseries {
+    display: inline-block;
+}
+.contenedor .sidebar1 {
+    grid-column: 4 / 6;
+    grid-row: 2/ 4;
+}
+.contenedor .sidebar1{
     display: grid; 
     
 }
-.contenedor .sidebar img {
+.contenedor .sidebar1 img {
     height: 150px;
     border-radius: 5%;
-    box-shadow: 5px 5px 0px #ccc;
-    object-fit: cover;
+}
+.contenedor .sidebar3 {
+    margin-top: 680px;
+    grid-column: 4 / 6;
+    grid-row: 2/ 5;
+}
+.contenedor .sidebar3{
+    display: grid; 
     
 }
-.contenedor .widget-1 {
-background: cornflowerblue;
+.contenedor .sidebar3 img {
+    height: 150px;
+    border-radius: 5%;
+}
+.contenedor .sidebar2 {
+    grid-column: 4 / 6;
+    grid-row: 3/ 5;
+}
+.contenedor .sidebar4 {
+    margin-top: 650px;
+    grid-column: 4 / 6;
+    grid-row: 3/ 5;
+}
+.contenedor .sidebar4
+{
+    display: inline-block; 
+    
+}
+.contenedor .sidebar4 img {
+    height: 150px;
+    border-radius: 5%;
+}
+.contenedor .formulario {
+    grid-column: 1 / 4;
+    grid-row: 4/ 5; 
+    
+}
+.contenedor .sidebar2 img {
+    height: 150px;
+    border-radius: 5%;
 }
 .contenedor .formulario {
     width: 400px;
@@ -96,6 +138,7 @@ background: cornflowerblue;
 .contenedor .formulario h4{
     font-size: 22px;
     margin-bottom: 20px;
+    background: #24303c;
 }
 .contenedor .controles {
     width: 100%;
@@ -113,10 +156,12 @@ background: cornflowerblue;
     text-align: center;
     font-size: 18px;
     line-height: 40px;
+    background: #24303c;
 }
 .formulario a {
     color: #ffff;
     text-decoration: underline;
+    background: #24303c;
 }
 .formulario .boton {
     width: 100%;
@@ -130,7 +175,9 @@ background: cornflowerblue;
 }
 .contenedor .footer {
     background: grey;
-    grid-column: span 3;
+    grid-row: 6/6;
+    grid-column-start: 1;
+    grid-column-end: 6;
 }
 
 @media only screen and (max-width: 800px ) {
